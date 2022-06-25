@@ -5,7 +5,7 @@
   "background_color": "#111827",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/spectator/",
   "icons": [{
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
