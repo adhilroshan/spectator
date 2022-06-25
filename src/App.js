@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+// import "./App.css";
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Projects from './pages/Projects/Projects';
+// import Inventory from './pages/Inventory/Inventory';
+import Parser from './components/CSVParser/Parser';
+import TableView from './pages/TableView/TableView';
+import CardView from './pages/CardView/CardView';
+import PageNotFound from './pages/404Page/PageNotFound';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="csv-table" element={<TableView />} />
+        <Route path="csv-card" element={<CardView />} />
+        <Route path="in" element={<Parser />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </div>
   );
 }
-
-export default App;
