@@ -4,7 +4,7 @@
   "theme_color": "#ffde59",
   "background_color": "#111827",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/spectator/",
   "start_url": "/spectator/",
   "icons": [{
       "src": "/android-chrome-192x192.png",
