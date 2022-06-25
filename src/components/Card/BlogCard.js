@@ -16,13 +16,13 @@ export const BlogCard = (props) => {
           src={imgUrl}
           alt="Sunset in the mountains"
         />
-        <div className="px-6 flex-1 py-4">
+        <div className="px-6 flex-1 py-̥5">
           <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-gray-700 text-base">{description}</p>
+          <p className="text-gray-700 text-base pb-4">{description}</p>
         </div>
       </div>
       {/* For Large Screens */}
-      <div className="hidden group mx-20 my-3  rounded-md  bg-slate-300 shadow-lg hover:shadow-amber-900  p-3 md:flex flex-row  transition ease-in-out delay-100 justify-between leading-normal hover:-translate-y-1 hover:scale-105 duration-100  ">
+      <div className="hidden group mx-20 my-3  rounded-md  bg-slate-300 shadow-lg   p-3 md:flex flex-row  transition ease-in-out delay-100 justify-between leading-normal hover:-translate-y-1 hover:scale-105 duration-100  ">
         <img
           className=" h-auto w-60 flex-none bg-cover rounded-md text-center shadow-lg group-hover:shadow-slate-700  overflow-hidden "
           src={imgUrl}

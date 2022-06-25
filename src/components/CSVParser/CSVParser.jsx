@@ -85,13 +85,13 @@ function CSVParser() {
     <div>
       {/* File Uploader */}
       <div className="flex flex-row justify-center items-center my-10">
-        <button
+        {/* <button
           className="bg-white  m-4 p-6 rounded font-semibold text-violet-700 hover:bg-violet-100"
           type="button"
           onClick={createPost}
         >
           Cards
-        </button>
+        </button> */}
         <input
           id="upload"
           type="file"

@@ -8,8 +8,8 @@ const Navbar = () => (
       {/* Flex Container */}
       <div className="flex item-center justify-between">
         {/* Logo */}
-        <div className="font-mono font-semibold text-gray-800 text-2xl">
-          Spectator
+        <div className="font-mono font-semibold text-gray-800 text-2xl hover:cursor-pointer hover:font-extrabold">
+          <NavLink to="/">Spectator</NavLink>
         </div>
         {/* Right Section */}
         <div className="hidden md:flex space-x-6 font-mono font-semibold text-gray-800">
