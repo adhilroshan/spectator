@@ -3,13 +3,18 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <div className="bg-slate-200 sticky top-0 z-50 shadow-2xl ">
+  <div className="bg-slate-800 sticky rounded-lg top-0 z-50 shadow-lg">
     <nav className="relative container mx-auto  p-6">
       {/* Flex Container */}
       <div className="flex item-center justify-between">
         {/* Logo */}
-        <div className="font-mono font-semibold text-gray-800 text-2xl hover:cursor-pointer hover:font-extrabold">
-          <NavLink to="/">Spectator</NavLink>
+        <div className="font-mono font-semibold text-gray-300 text-2xl hover:cursor-pointer hover:font-extrabold">
+          <NavLink to="/" className="hidden md:flex">
+            Spectator
+          </NavLink>
+          <NavLink to="/" className="md:hidden">
+            <img className="h-14 w-14" src="/img/logo.png" alt="spectator" />
+          </NavLink>
         </div>
         {/* Right Section */}
         <div className="hidden md:flex space-x-6 font-mono font-semibold text-gray-800">

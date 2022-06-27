@@ -1,7 +1,6 @@
 /* eslint-disable array-callback-return */
 import Papa from 'papaparse';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const csv = require('csvtojson');
 
@@ -73,12 +72,6 @@ function CSVParser() {
         const upbtn = document.getElementById('upload');
         upbtn.className = 'hidden';
       },
-    });
-  };
-  const navigate = useNavigate();
-  const createPost = () => {
-    navigate('/inventory', {
-      state: { json: parsedData, key: tableRows },
     });
   };
   return (
